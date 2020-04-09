@@ -15,20 +15,20 @@ public class RealScalar extends Scalar {
 
     public Scalar add(Scalar s){
         if(s==null) return null;
-        return new RealScalar(v+((RealScalar)s).getV());
+        return new RealScalar(v+((RealScalar)s).v);
     }
 
     public Scalar mul(Scalar s){
         if(s==null)return null;
-        return new RealScalar(v*((RealScalar)s).getV());
+        return new RealScalar(v*((RealScalar)s).v);
     }
     public Scalar mul(int i){
         return new RealScalar(v*i);
     }
     public Scalar power(int exp){
-        double x=v;
+        double x=1;
         for(int i=0;i<exp;i++)
-            x*=x;
+            x*=v;
         return new RealScalar(x);
 
     }

@@ -25,8 +25,8 @@ public class RationalScalar extends Scalar{
         return new RationalScalar(a*i, b);
     }
     public Scalar power(int exp) {
-        int a = this.a;
-        int b = this.b;
+        int a = 1;
+        int b = 1;
         for (int i = 0; i < exp ; i++) {
             a = a * this.a;
             b = b * this.b;
@@ -40,7 +40,7 @@ public class RationalScalar extends Scalar{
 
     public String toString(){
         String returnValue;
-        if((a/b)*b == a) returnValue = (a/b)+"";// is it casting?
+        if(a%b==0) returnValue = "("+a/b+")";// is it casting?
         else returnValue ="("+a+"/"+b+")";
         return  returnValue;
     }
