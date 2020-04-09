@@ -8,6 +8,7 @@ public abstract class Scalar extends Object{
         return ((this instanceof RealScalar & s instanceof RealScalar) | (this instanceof RationalScalar & s instanceof RationalScalar));
     }
 
+    public abstract double getValue();
     public abstract Scalar add(Scalar s);
 
     public abstract Scalar mul(Scalar s);

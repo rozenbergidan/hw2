@@ -51,48 +51,88 @@ public class Polynomial {
 
     }
 
-    public Polynomial add(Polynomial p) {
-        if (!isMatch(p)) return null;
-        Polynomial ans = new Polynomial();
+//    public Polynomial add(Polynomial p) {
+//        if (!isMatch(p)) return null;
+//        Polynomial ans = new Polynomial();
+//
+//        Iterator<Monomial> thisIter = monomials.iterator();
+//        Iterator<Monomial> pIter = p.monomials.iterator();
+//        Monomial thismono = null;
+//        Monomial pmono = null;
+//
+//        while(thisIter.hasNext() & pIter.hasNext()){
+//            if (thismono == null & pmono == null) {
+//                thismono = thisIter.next();
+//                pmono = pIter.next();
+//            }
+//            if (pmono.getExp() < thismono.getExp()) {
+//                ans.monomials.add(pmono);
+//                pmono = pIter.next();
+//            } else if (thismono.getExp() < pmono.getExp()) {
+//                ans.monomials.add(thismono);
+//                thismono = thisIter.next();
+//            } else {
+//                Monomial temp = thismono.add(pmono);
+//                if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
+//                    ans.monomials.add(temp);
+//                    thismono = thisIter.next();
+//                    pmono = pIter.next();
+//            }
+//        }
+//        while (thisIter.hasNext()) {
+//            if (thismono == null)
+//                thismono = thisIter.next();
+//            ans.monomials.add(thismono);
+//            thismono = thisIter.next();
+//        }
+//        while (pIter.hasNext()) {
+//            if (pmono == null)
+//                pmono = pIter.next();
+//            ans.monomials.add(pmono);
+//            pmono = pIter.next();
+//        }
+//        return ans;
+//    }
+public Polynomial add(Polynomial p) {
+    if (!isMatch(p)) return null;
+    Polynomial ans = new Polynomial();
 
-        Iterator<Monomial> thisIter = monomials.iterator();
-        Iterator<Monomial> pIter = p.monomials.iterator();
-        Monomial thismono = null;
-        Monomial pmono = null;
-
-        while (thisIter.hasNext() & pIter.hasNext()) {
-            if (thismono == null & pmono == null) {
-                thismono = thisIter.next();
-                pmono = pIter.next();
-            }
-            if (pmono.getExp() < thismono.getExp()) {
-                ans.monomials.add(pmono);
-                pmono = pIter.next();
-            } else if (thismono.getExp() < pmono.getExp()) {
-                ans.monomials.add(thismono);
-                thismono = thisIter.next();
-            } else {
-                Monomial temp = thismono.add(pmono);
-                if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
-                    ans.monomials.add(temp);
-                thismono = thisIter.next();
-                pmono = pIter.next();
-            }
-        }
-        while (thisIter.hasNext()) {
-            if (thismono == null)
-                thismono = thisIter.next();
-            ans.monomials.add(thismono);
-            thismono = thisIter.next();
-        }
-        while (pIter.hasNext()) {
-            if (pmono == null)
-                pmono = pIter.next();
+    Iterator<Monomial> thisIter = monomials.iterator();
+    Iterator<Monomial> pIter = p.monomials.iterator();
+    Monomial thismono = null;
+    Monomial pmono = null;
+    boolean tmNext = true;
+    boolean pmNext = true;
+    while (thisIter.hasNext() & pIter.hasNext()) {
+        if(pmNext) pmono = pIter.next();
+        if(tmNext) thismono = thisIter.next();
+        pmNext = false;
+        tmNext = false;
+        if (pmono.getExp() < thismono.getExp()) {
             ans.monomials.add(pmono);
-            pmono = pIter.next();
+            pmNext=true;
+        } else if (thismono.getExp() < pmono.getExp()) {
+            ans.monomials.add(thismono);
+            tmNext = true;
+        } else {
+            Monomial temp = thismono.add(pmono);
+            if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
+                ans.monomials.add(temp);
+            tmNext = true;
+            pmNext = true;
         }
-        return ans;
     }
+
+    while (thisIter.hasNext()) {
+        thismono = thisIter.next();
+        ans.monomials.add(thismono);
+    }
+    while (pIter.hasNext()) {
+        pmono = pIter.next();
+        ans.monomials.add(pmono);
+    }
+    return ans;
+}
 
     public Polynomial mul(Polynomial p) {
         if (isMatch(p)) return null;
@@ -132,9 +172,12 @@ public class Polynomial {
     public String toString() {
         String str = "";
         for (Monomial mono : monomials) {
-            if(mono.sign())
-            str = str + mono.toString();
+            if(mono.sign()==1)
+                str = str+"+"+mono.toString();
+            else
+            str = str+mono.toString();
         }
+        if(str.charAt(0)=='+') str=str.substring(1);
         return str;
     }
 
