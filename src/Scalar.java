@@ -1,4 +1,6 @@
-public abstract class Scalar extends Object {
+
+public abstract class Scalar extends Object{
+
     /**
      * learn about:  virtualization, double dispatch and visitor pattern to get 15 points
      */
