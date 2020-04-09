@@ -7,6 +7,13 @@ public class Monomial {
         exp = expo;
     }
 
+    public int getExp(){
+        return exp;
+    }
+
+    public Scalar getScalar(){
+        return coe;
+    }
     public boolean isMatch(Monomial m) {
         if (m == null) throw new IllegalArgumentException();
         return this.coe.isMatch(m.coe);
@@ -41,9 +48,9 @@ public class Monomial {
 
     public String toString() {
         String str = "";
-        if (exp == 0) str = coe + "";
-        else if (exp == 1) str = coe + "x";
-        else str = coe + "x^" + exp;
+        if (exp == 0) str = coe.toString();
+        else if (exp == 1) str = coe.toString() + "x";
+        else str = coe.toString() + "x^" + exp;
         return str;
     }
 }
