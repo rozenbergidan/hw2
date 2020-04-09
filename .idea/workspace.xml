@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RationalScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RationalScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
