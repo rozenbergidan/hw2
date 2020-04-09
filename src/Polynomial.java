@@ -132,6 +132,7 @@ public class Polynomial {
     public String toString() {
         String str = "";
         for (Monomial mono : monomials) {
+            if(mono.sign())
             str = str + mono.toString();
         }
         return str;

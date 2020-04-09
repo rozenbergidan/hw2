@@ -4,10 +4,8 @@
     <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Monomial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,7 @@
       <workItem from="1586441509230" duration="2042000" />
       <workItem from="1586443581765" duration="883000" />
       <workItem from="1586447006682" duration="8253000" />
+      <workItem from="1586458445572" duration="1217000" />
     </task>
     <servers />
   </component>
@@ -102,57 +101,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="400" y="132" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1280.680@0.0.1280.680" timestamp="1586456111259" />
-    <state width="1225" height="189" key="GridCell.Tab.0.bottom" timestamp="1586457053831">
+    <state width="1225" height="150" key="GridCell.Tab.0.bottom" timestamp="1586459322097">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="189" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
-    <state width="1225" height="189" key="GridCell.Tab.0.center" timestamp="1586457053831">
+    <state width="1225" height="150" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586459322097" />
+    <state width="1225" height="150" key="GridCell.Tab.0.center" timestamp="1586459322097">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="189" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
-    <state width="1225" height="189" key="GridCell.Tab.0.left" timestamp="1586457053831">
+    <state width="1225" height="150" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586459322097" />
+    <state width="1225" height="150" key="GridCell.Tab.0.left" timestamp="1586459322097">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="189" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
-    <state width="1225" height="189" key="GridCell.Tab.0.right" timestamp="1586457053831">
+    <state width="1225" height="150" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586459322097" />
+    <state width="1225" height="150" key="GridCell.Tab.0.right" timestamp="1586459322097">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="189" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
-    <state width="1225" height="189" key="GridCell.Tab.1.bottom" timestamp="1586457053831">
+    <state width="1225" height="150" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586459322097" />
+    <state width="1225" height="189" key="GridCell.Tab.1.bottom" timestamp="1586459293048">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="189" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
-    <state width="1225" height="189" key="GridCell.Tab.1.center" timestamp="1586457053831">
+    <state width="1225" height="189" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586459293048" />
+    <state width="1225" height="189" key="GridCell.Tab.1.center" timestamp="1586459293047">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="189" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
-    <state width="1225" height="189" key="GridCell.Tab.1.left" timestamp="1586457053831">
+    <state width="1225" height="189" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586459293047" />
+    <state width="1225" height="189" key="GridCell.Tab.1.left" timestamp="1586459293047">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="189" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
-    <state width="1225" height="189" key="GridCell.Tab.1.right" timestamp="1586457053831">
+    <state width="1225" height="189" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586459293047" />
+    <state width="1225" height="189" key="GridCell.Tab.1.right" timestamp="1586459293048">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="189" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+    <state width="1225" height="189" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586459293048" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Polynomial.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Polynomial.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Calculator.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/RealScalar.java</url>
           <line>15</line>
@@ -168,6 +152,16 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Calculator.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Polynomial.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

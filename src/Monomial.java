@@ -24,12 +24,12 @@ public class Monomial {
     }
 
     public Monomial add(Monomial m) {
-        if (canAdd(m)) return null;
+        if (!canAdd(m)) return null;
         return new Monomial(coe.add(m.coe), exp);
     }
 
     public Monomial mul(Monomial m) {
-        if (canAdd(m)) return null;
+        if (!canAdd(m)) return null;
         return new Monomial(coe.mul(m.coe), exp + m.exp);
     }
 
