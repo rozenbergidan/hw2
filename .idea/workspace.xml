@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RationalScalar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +42,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586167755499</updated>
       <workItem from="1586167759203" duration="172000" />
+      <workItem from="1586168406661" duration="24000" />
+      <workItem from="1586439806415" duration="605000" />
     </task>
     <servers />
   </component>
