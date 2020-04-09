@@ -39,14 +39,22 @@ public class Polynomial {
 
     }
     public Polynomial add(Polynomial p){
+        if(!isMatch(p)) return null;
+
         Polynomial ans=new Polynomial();
         String str="";
         char type;
         int exp=0;
+        Monomial checkType=new Monomial((new RealScalar(1.5)),1);
         Iterator<Monomial>iterThis=monomials.iterator();
         Iterator<Monomial>iterP=p.monomials.iterator();
+
+
         Monomial thismono=iterThis.next();
         Monomial pmono=iterP.next();
+
+        if(thismono.isMatch(checkType)) type='R';
+        else type='Q';
         while(iterP.hasNext() & iterThis.hasNext()) {
             if (exp < pmono.getExp() & exp < thismono.getExp()) { //if we didnt came to the poly exp
                 str = str + "0 ";
@@ -85,7 +93,8 @@ public class Polynomial {
             exp++;
         }
 
-        return ans.build(type,str);
+        ans.build(type,str);
+        return ans;
     }
     public Polynomial mul(Polynomial p){
 
