@@ -107,9 +107,15 @@ public class Polynomial {
 //    public Polynomial mul(Polynomial p){
 //
 //    }
-//    public Scalar evaluate(Scalar scalar){
-//
-//    }
+   public Scalar evaluate(Scalar scalar){
+
+       Iterator<Monomial> iter = monomials.iterator();
+
+       Scalar ans;
+       while (iter.hasNext()){
+            ans = ans.
+       }
+    }
 //    public Polynomial derivative(){
 //
 //    }
