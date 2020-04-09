@@ -14,12 +14,12 @@ public class RealScalar extends Scalar {
     }
 
     public Scalar add(Scalar s){
-        if(s==null) return null;
+        if(s==null||!isMatch(s)) return null;
         return new RealScalar(v+((RealScalar)s).v);
     }
 
     public Scalar mul(Scalar s){
-        if(s==null)return null;
+        if(s==null||!isMatch(s))return null;
         return new RealScalar(v*((RealScalar)s).v);
     }
     public Scalar mul(int i){
