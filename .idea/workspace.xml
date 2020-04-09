@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Monomial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +36,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Calculator">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Calculator" />
+      <module name="hw2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="hw2" />
@@ -41,6 +53,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -85,5 +98,78 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="459" y="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1586453558392" />
+    <state x="400" y="132" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1586456111259">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="400" y="132" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1280.680@0.0.1280.680" timestamp="1586456111259" />
+    <state width="1225" height="189" key="GridCell.Tab.0.bottom" timestamp="1586457053831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1225" height="189" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+    <state width="1225" height="189" key="GridCell.Tab.0.center" timestamp="1586457053831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1225" height="189" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+    <state width="1225" height="189" key="GridCell.Tab.0.left" timestamp="1586457053831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1225" height="189" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+    <state width="1225" height="189" key="GridCell.Tab.0.right" timestamp="1586457053831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1225" height="189" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+    <state width="1225" height="189" key="GridCell.Tab.1.bottom" timestamp="1586457053831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1225" height="189" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+    <state width="1225" height="189" key="GridCell.Tab.1.center" timestamp="1586457053831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1225" height="189" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+    <state width="1225" height="189" key="GridCell.Tab.1.left" timestamp="1586457053831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1225" height="189" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+    <state width="1225" height="189" key="GridCell.Tab.1.right" timestamp="1586457053831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1225" height="189" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586457053831" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Polynomial.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Polynomial.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Calculator.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/RealScalar.java</url>
+          <line>15</line>
+          <properties class="RealScalar" method="add">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Monomial.java</url>
+          <line>25</line>
+          <properties class="Monomial" method="add">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
