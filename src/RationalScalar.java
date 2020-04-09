@@ -9,13 +9,13 @@ public class RationalScalar extends Scalar{
         this.b = b;
     }
     public Scalar add(Scalar s){
-        if (!isMatch(s)) return null;
+        if(s==null||!isMatch(s))return null;
         int a = this.a*((RationalScalar)s).b+this.b*((RationalScalar)s).a;
         int b = this.b*((RationalScalar)s).b;
         return new RationalScalar(a,b);
     }
     public Scalar mul(Scalar s){
-        if (!isMatch(s)) return null;
+        if(s==null||!isMatch(s))return null;
         int a = this.a*((RationalScalar)s).a;
         int b = this.b*((RationalScalar)s).b;
         return new RationalScalar(a,b);
