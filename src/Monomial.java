@@ -38,7 +38,8 @@ public class Monomial {
         return scalar.power(exp).mul(coe);
     }
 
-    public Monomial derivative() {
+    public Monomial derivative() { //TODO ask about what happens if the exp is 0
+        if(exp==0) return null;
         return new Monomial(coe.mul(exp), exp - 1);
     }
 

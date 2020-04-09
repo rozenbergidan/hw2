@@ -39,7 +39,8 @@ public class RationalScalar extends Scalar {
 
     public int sign() {
         if (a * b > 0) return 1;
-        return -1;
+        else if (a * b < 0) return -1;
+        else return 0;
     }
 
     public String toString() {
