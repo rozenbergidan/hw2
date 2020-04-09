@@ -24,7 +24,7 @@ public class Monomial {
     }
 
     public Monomial add(Monomial m) {
-        if (canAdd(m)) return null;
+        if (!canAdd(m)) return null;
         return new Monomial(coe.add(m.coe), exp);
     }
 
@@ -49,9 +49,6 @@ public class Monomial {
 
     public String toString() {
         String str = "";
-        if (exp == 0) str = coe.toString();
-        else if (exp == 1) str = coe.toString() + "x";
-        else str = coe.toString() + "x^" + exp;
-        return str;
+        if (!())
     }
 }

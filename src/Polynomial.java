@@ -1,6 +1,3 @@
-import com.sun.scenario.effect.light.SpotLight;
-
-import javax.management.relation.Relation;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -59,37 +56,35 @@ public class Polynomial {
         Iterator<Monomial> pIter = p.monomials.iterator();
         Monomial thismono = null;
         Monomial pmono = null;
-
+        boolean tmNext = true;
+        boolean pmNext = true;
         while (thisIter.hasNext() & pIter.hasNext()) {
-            if (thismono == null & pmono == null) {
-                thismono = thisIter.next();
-                pmono = pIter.next();
-            }
+            if(pmNext) pmono = pIter.next();
+            if(tmNext) thismono = thisIter.next();
+            pmNext = false;
+            tmNext = false;
             if (pmono.getExp() < thismono.getExp()) {
                 ans.monomials.add(pmono);
-                pmono = pIter.next();
+                pmNext=true;
             } else if (thismono.getExp() < pmono.getExp()) {
                 ans.monomials.add(thismono);
-                thismono = thisIter.next();
+                tmNext = true;
             } else {
                 Monomial temp = thismono.add(pmono);
                 if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
                     ans.monomials.add(temp);
-                thismono = thisIter.next();
-                pmono = pIter.next();
+                tmNext = true;
+                pmNext = true;
             }
         }
+
         while (thisIter.hasNext()) {
-            if (thismono == null)
-                thismono = thisIter.next();
-            ans.monomials.add(thismono);
             thismono = thisIter.next();
-        }
+            ans.monomials.add(thismono);
+            }
         while (pIter.hasNext()) {
-            if (pmono == null)
-                pmono = pIter.next();
-            ans.monomials.add(pmono);
             pmono = pIter.next();
+            ans.monomials.add(pmono);
         }
         return ans;
     }
