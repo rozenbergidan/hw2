@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/src/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,18 +34,6 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -62,7 +49,7 @@
       <workItem from="1586439806415" duration="605000" />
       <workItem from="1586441509230" duration="2042000" />
       <workItem from="1586443581765" duration="883000" />
-      <workItem from="1586447006682" duration="2840000" />
+      <workItem from="1586447006682" duration="3245000" />
     </task>
     <servers />
   </component>
