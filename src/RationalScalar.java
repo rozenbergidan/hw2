@@ -1,4 +1,4 @@
-public class RationalScalar extends Scalar{
+public class RationalpullScalar extends Scalar{
     private int a;
     private int b;
 
