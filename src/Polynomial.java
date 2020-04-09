@@ -1,5 +1,6 @@
 import com.sun.scenario.effect.light.SpotLight;
 
+import javax.management.relation.Relation;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -110,7 +111,13 @@ public class Polynomial {
     }
 
     public Scalar evaluate(Scalar scalar) {
-        
+        Scalar ans=scalar.mul(1);
+        Scalar nega=scalar.mul(-1);
+        for(Monomial mono: monomials){
+            ans=ans.add(mono.evalute(scalar));
+        }
+        ans=ans.add(nega);
+        return ans;
     }
 
     public Polynomial derivative() {
