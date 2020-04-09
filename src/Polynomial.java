@@ -9,7 +9,6 @@ public class Polynomial {
 
     public Polynomial() {
         monomials = new LinkedList<>();
-
     }
 
     public void build(char type, String input) { // TODO check if the biuld is according to the Instructions
@@ -20,17 +19,22 @@ public class Polynomial {
                 if (type == 'Q') {
                     String[] n = coefficient.split("/");
                     int a = Integer.parseInt(n[0]);
-                    int b = 1;
-                    if (n.length > 1) b = Integer.parseInt(n[1]);
-                    RationalScalar c = new RationalScalar(a, b);
-                    monomials.add(new Monomial(c, exp));
+                    if (a != 0) {
+                        int b = 1;
+                        if (n.length > 1) b = Integer.parseInt(n[1]);
+                        RationalScalar c = new RationalScalar(a, b);
+                        monomials.add(new Monomial(c, exp));
+                    }
                 } else {
-                    int v = Integer.parseInt(coefficient);
-                    RealScalar c = new RealScalar(v);
-                    monomials.add(new Monomial(c, exp));
+                    double v = Double.parseDouble(coefficient);
+                    if (v != 0) {
+                        RealScalar c = new RealScalar(v);
+                        monomials.add(new Monomial(c, exp));
+                    }
                 }
                 exp++;
             }
+
         }
     }
 
@@ -45,66 +49,6 @@ public class Polynomial {
         return true;
 
     }
-//    public Polynomial add(Polynomial p){
-//        if(!isMatch(p)) return null;
-//
-//        Polynomial ans=new Polynomial();
-//        String str="";
-//        char type;
-//        int exp=0;
-//
-//        Monomial checkType=new Monomial((new RealScalar(1.5)),1); //RealScalar Mono check
-//        Iterator<Monomial>iterThis=monomials.iterator();
-//        Iterator<Monomial>iterP=p.monomials.iterator();
-//
-//
-//        Monomial thismono=iterThis.next();
-//        Monomial pmono=iterP.next();
-//
-//        if(thismono.isMatch(checkType)) type='R';
-//        else type='Q';
-//
-//        while(iterP.hasNext() & iterThis.hasNext()) {
-//            if (exp < pmono.getExp() & exp < thismono.getExp()) { //if we didnt came to the poly exp
-//                str = str + "0 ";
-//            } else if (thismono.canAdd(pmono)) { //if exp is equals
-//                Monomial temp = thismono.add(pmono);
-//                str = str + temp.getScalar().toString() + " ";
-//                thismono = iterThis.next();
-//                pmono = iterP.next();
-//            } else if (pmono.getExp() < thismono.getExp()) { //if pmono exp is lower
-//                str = str + pmono.getScalar().toString() + " ";
-//                pmono = iterP.next();
-//            } else if (thismono.getExp() < pmono.getExp()) { //if thismono exp is lower
-//                str = str + thismono.getScalar().toString() + " ";
-//                thismono = iterP.next();
-//            }
-//            exp++;
-//        }
-//        while(iterP.hasNext()){  // if we didnt finish with p poly
-//            if(exp<pmono.getExp()){
-//                str = str + "0 ";
-//            }
-//            else{
-//                str = str + pmono.getScalar().toString() + " ";
-//                pmono = iterP.next();
-//            }
-//            exp++;
-//        }
-//        while(iterThis.hasNext()){  // if we didnt finish with this poly
-//            if(exp<thismono.getExp()){
-//                str = str + "0 ";
-//            }
-//            else{
-//                str = str + thismono.getScalar().toString() + " ";
-//                thismono = iterThis.next();
-//            }
-//            exp++;
-//        }
-//
-//        ans.build(type,str);
-//        return ans;
-//    }
 
     public Polynomial add(Polynomial p) {
         if (!isMatch(p)) return null;
@@ -112,13 +56,13 @@ public class Polynomial {
 
         Iterator<Monomial> thisIter = monomials.iterator();
         Iterator<Monomial> pIter = p.monomials.iterator();
-        Monomial thismono=null;
-        Monomial pmono=null;
+        Monomial thismono = null;
+        Monomial pmono = null;
 
         while (thisIter.hasNext() & pIter.hasNext()) {
-            if(thismono==null & pmono==null){
-                thismono=thisIter.next();
-                pmono=pIter.next();
+            if (thismono == null & pmono == null) {
+                thismono = thisIter.next();
+                pmono = pIter.next();
             }
             if (pmono.getExp() < thismono.getExp()) {
                 ans.monomials.add(pmono);
@@ -135,14 +79,14 @@ public class Polynomial {
             }
         }
         while (thisIter.hasNext()) {
-            if(thismono==null)
-                thismono=thisIter.next();
+            if (thismono == null)
+                thismono = thisIter.next();
             ans.monomials.add(thismono);
             thismono = thisIter.next();
         }
         while (pIter.hasNext()) {
-            if(pmono==null)
-                pmono=pIter.next();
+            if (pmono == null)
+                pmono = pIter.next();
             ans.monomials.add(pmono);
             pmono = pIter.next();
         }
@@ -166,13 +110,13 @@ public class Polynomial {
     }
 
     public Scalar evaluate(Scalar scalar) {
-
+        
     }
 
     public Polynomial derivative() {
-        Polynomial ans=new Polynomial();
-        for(Monomial mono: monomials){
-            if(mono.derivative()!=null)
+        Polynomial ans = new Polynomial();
+        for (Monomial mono : monomials) {
+            if (mono.derivative() != null)
                 ans.monomials.add(mono.derivative());
         }
         return ans;
@@ -180,10 +124,11 @@ public class Polynomial {
 
     public String toString() {
         String str = "";
-        for(Monomial mono: monomials){
-            str=str+mono.toString();
+        for (Monomial mono : monomials) {
+            str = str + mono.toString();
         }
         return str;
     }
+
 
 }
