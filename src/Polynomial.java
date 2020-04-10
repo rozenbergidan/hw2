@@ -59,7 +59,7 @@ public class Polynomial {
     public Polynomial add(Polynomial p) {
         if (!isMatch(p)) return null;
         Polynomial ans = new Polynomial();
-        if (p == null) ans = clone();
+        if (p.monomials.isEmpty()) ans = clone();
         else {
             Iterator<Monomial> thisIter = monomials.iterator();
             Iterator<Monomial> pIter = p.monomials.iterator();
