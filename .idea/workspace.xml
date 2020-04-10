@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Monomial.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,7 @@
       <workItem from="1586441509230" duration="2042000" />
       <workItem from="1586443581765" duration="883000" />
       <workItem from="1586447006682" duration="8253000" />
-      <workItem from="1586526916311" duration="1526000" />
+      <workItem from="1586526916311" duration="2783000" />
     </task>
     <servers />
   </component>
@@ -102,38 +103,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="400" y="132" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1280.680@0.0.1280.680" timestamp="1586456111259" />
-    <state width="1225" height="67" key="GridCell.Tab.0.bottom" timestamp="1586528446950">
+    <state width="1225" height="291" key="GridCell.Tab.0.bottom" timestamp="1586529647036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586528446950" />
-    <state width="1225" height="67" key="GridCell.Tab.0.center" timestamp="1586528446947">
+    <state width="1225" height="291" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586529647036" />
+    <state width="1225" height="291" key="GridCell.Tab.0.center" timestamp="1586529647036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586528446947" />
-    <state width="1225" height="67" key="GridCell.Tab.0.left" timestamp="1586528446946">
+    <state width="1225" height="291" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586529647036" />
+    <state width="1225" height="291" key="GridCell.Tab.0.left" timestamp="1586529647036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586528446946" />
-    <state width="1225" height="67" key="GridCell.Tab.0.right" timestamp="1586528446949">
+    <state width="1225" height="291" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586529647036" />
+    <state width="1225" height="291" key="GridCell.Tab.0.right" timestamp="1586529647036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586528446949" />
-    <state width="1225" height="67" key="GridCell.Tab.1.bottom" timestamp="1586528447288">
+    <state width="1225" height="291" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586529647036" />
+    <state width="1225" height="291" key="GridCell.Tab.1.bottom" timestamp="1586529647373">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586528447288" />
-    <state width="1225" height="67" key="GridCell.Tab.1.center" timestamp="1586528447288">
+    <state width="1225" height="291" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586529647373" />
+    <state width="1225" height="291" key="GridCell.Tab.1.center" timestamp="1586529647373">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586528447288" />
-    <state width="1225" height="67" key="GridCell.Tab.1.left" timestamp="1586528447287">
+    <state width="1225" height="291" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586529647373" />
+    <state width="1225" height="291" key="GridCell.Tab.1.left" timestamp="1586529647373">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586528447287" />
-    <state width="1225" height="67" key="GridCell.Tab.1.right" timestamp="1586528447288">
+    <state width="1225" height="291" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586529647373" />
+    <state width="1225" height="291" key="GridCell.Tab.1.right" timestamp="1586529647373">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586528447288" />
+    <state width="1225" height="291" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586529647373" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -36,19 +36,19 @@ public class Calculator {
 
 
         //Add Tests
-//        printTitle("Testing Add");
-//        printAdd(R1, R1, R1.add(R1));
-//        printAdd(R1, R2, R1.add(R2));
-//        printAdd(R2, R3, R2.add(R3));
-//        printAdd(R3, R1, R3.add(R1));
-//        printAdd(R4, R4, R4.add(R4));
-//        printAdd(Q1, Q1, Q1.add(Q1));
-//        printAdd(Q1, Q2, Q1.add(Q2));
-//        printAdd(Q2, Q3, Q2.add(Q3));
-//        printAdd(Q3, Q1, Q3.add(Q1));
-//        printAdd(Q4, Q4, Q4.add(Q4));
-//        printAdd(Q5, Q5, Q5.add(Q5));
-//        printAdd(Q4, Q5, Q4.add(Q5));
+        printTitle("Testing Add");
+        printAdd(R1, R1, R1.add(R1));
+        printAdd(R1, R2, R1.add(R2));
+        printAdd(R2, R3, R2.add(R3));
+        printAdd(R3, R1, R3.add(R1));
+        printAdd(R4, R4, R4.add(R4));
+        printAdd(Q1, Q1, Q1.add(Q1));
+        printAdd(Q1, Q2, Q1.add(Q2));
+        printAdd(Q2, Q3, Q2.add(Q3));
+        printAdd(Q3, Q1, Q3.add(Q1));
+        printAdd(Q4, Q4, Q4.add(Q4));
+        printAdd(Q5, Q5, Q5.add(Q5));
+        printAdd(Q4, Q5, Q4.add(Q5));
 
 
         //Mul Tests

@@ -29,7 +29,7 @@ public class Monomial {
     }
 
     public Monomial mul(Monomial m) {
-        if (!canAdd(m)) return null;
+        if (!isMatch(m)) return null;
         return new Monomial(coe.mul(m.coe), exp + m.exp);
     }
 
