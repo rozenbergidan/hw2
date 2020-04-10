@@ -49,6 +49,7 @@ public class Polynomial {
 
     }
 
+
     public Polynomial clone(){
         Polynomial ans=new Polynomial();
         for(Monomial mono: monomials)
@@ -60,7 +61,8 @@ public class Polynomial {
     public Polynomial add(Polynomial p) {
         if (!isMatch(p)) return null;
         Polynomial ans = new Polynomial();
-        if(p==null) ans=clone();
+        if (p == null) ans = clone();
+
         else {
             Iterator<Monomial> thisIter = monomials.iterator();
             Iterator<Monomial> pIter = p.monomials.iterator();
@@ -147,12 +149,12 @@ public class Polynomial {
     }
 
     public Scalar evaluate(Scalar scalar) {
-        Scalar ans=scalar.mul(1);
-        Scalar nega=scalar.mul(-1);
-        for(Monomial mono: monomials){
-            ans=ans.add(mono.evalute(scalar));
+        Scalar ans = scalar.mul(1);
+        Scalar nega = scalar.mul(-1);
+        for (Monomial mono : monomials) {
+            ans = ans.add(mono.evalute(scalar));
         }
-        ans=ans.add(nega);
+        ans = ans.add(nega);
         return ans;
     }
 
@@ -168,12 +170,12 @@ public class Polynomial {
     public String toString() {
         String str = "";
         for (Monomial mono : monomials) {
-            if(mono.sign()==1)
-                str = str+"+"+mono.toString();
+            if (mono.sign() == 1)
+                str = str + "+" + mono.toString();
             else
-            str = str+mono.toString();
+                str = str + mono.toString();
         }
-        if(str.charAt(0)=='+') str=str.substring(1);
+        if (str.charAt(0) == '+') str = str.substring(1);
         return str;
     }
 
