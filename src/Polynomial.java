@@ -59,6 +59,7 @@ public class Polynomial {
 
 
     public Polynomial add(Polynomial p) {
+                                                                                                                        System.out.println(this + " + " + p);
         if (!isMatch(p)) return null;
         Polynomial ans = new Polynomial();
         if (p.monomials.isEmpty()) ans = clone();
@@ -141,6 +142,7 @@ public class Polynomial {
             for (Monomial mono : p.monomials) {
                 temp.monomials.add(thismono.mul(mono));
             }
+            System.out.println(temp);
             ans = temp.add(ans);
         }
         return ans;
