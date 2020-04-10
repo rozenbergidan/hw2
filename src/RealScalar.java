@@ -4,6 +4,8 @@ public class RealScalar extends Scalar {
     private double v;
 
     public RealScalar(double x) {
+//        if (x == 0)
+//            throw new IllegalArgumentException("Coefficient can't be 0");
         v = x;
     }
 

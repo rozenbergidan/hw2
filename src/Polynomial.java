@@ -73,7 +73,7 @@ public class Polynomial {
 //                if (pmNext) {
 //                    pmono = pIter.next();
 //                    pmNext = false;
-//                }
+//                }git pull
 //                if (tmNext) {
 //                    thismono = thisIter.next();
 //                    tmNext = false;

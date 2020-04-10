@@ -3,6 +3,7 @@ public class RationalScalar extends Scalar {
     private int b;
 
     public RationalScalar(int a, int b) {
+//        if (a == 0) throw new IllegalArgumentException("coefficient cant be 0");
         if (b == 0) throw new IllegalArgumentException("cannot divide by zero");
         this.a = a;
         this.b = b;
