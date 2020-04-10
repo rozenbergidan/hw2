@@ -73,12 +73,12 @@ public class Calculator {
         printEval(R2, r, R2.evaluate(r));
         printEval(R3, r, R3.evaluate(r));
         printEval(R4, r, R4.evaluate(r));
-//        RationalScalar q = new RationalScalar(1);
-//        printEval(Q1, q, Q1.evaluate(q));
-//        printEval(Q2, q, Q2.evaluate(q));
-//        printEval(Q3, q, Q3.evaluate(q));
-//        printEval(Q4, q, Q4.evaluate(q));
-//        printEval(Q5, q, Q5.evaluate(q));
+        RationalScalar q = new RationalScalar(1,1);
+        printEval(Q1, q, Q1.evaluate(q));
+        printEval(Q2, q, Q2.evaluate(q));
+        printEval(Q3, q, Q3.evaluate(q));
+        printEval(Q4, q, Q4.evaluate(q));
+        printEval(Q5, q, Q5.evaluate(q));
 
         //Derivate Tests
         printTitle("Testing derivative");
