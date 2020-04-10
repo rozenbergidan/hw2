@@ -174,7 +174,12 @@ public class Polynomial {
             else
                 str = str + mono.toString();
         }
-        if (str.charAt(0) == '+') str = str.substring(1);
+        if (str.length() == 0){
+            str = "0";
+        }
+        else {
+            if (str.charAt(0) == '+') str = str.substring(1);
+        }
         return str;
     }
 
