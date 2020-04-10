@@ -48,6 +48,7 @@ public class Polynomial {
 
     }
 
+
     public Polynomial add(Polynomial p) {
         if (!isMatch(p)) return null;
         Polynomial ans = new Polynomial();
@@ -86,8 +87,8 @@ public class Polynomial {
             pmono = pIter.next();
             ans.monomials.add(pmono);
         }
-        return ans;
-    }
+    return ans;
+}
 
     public Polynomial mul(Polynomial p) {
         if (isMatch(p)) return null;
@@ -127,8 +128,12 @@ public class Polynomial {
     public String toString() {
         String str = "";
         for (Monomial mono : monomials) {
-            str = str + mono.toString();
+            if(mono.sign()==1)
+                str = str+"+"+mono.toString();
+            else
+            str = str+mono.toString();
         }
+        if(str.charAt(0)=='+') str=str.substring(1);
         return str;
     }
 

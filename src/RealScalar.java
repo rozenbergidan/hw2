@@ -9,7 +9,8 @@ public class RealScalar extends Scalar {
         v = x;
     }
 
-    public double getV() {
+
+    public double getValue() {
         return v;
     }
 
@@ -44,8 +45,6 @@ public class RealScalar extends Scalar {
     public String toString() {
         DecimalFormat df3 = new DecimalFormat("#.###");
         String str = df3.format(v);
-        if (sign() == -1)
-            str = "-" + str;
         return str;
     }
 }

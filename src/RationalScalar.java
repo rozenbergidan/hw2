@@ -9,6 +9,9 @@ public class RationalScalar extends Scalar {
         this.b = b;
     }
 
+    public double getValue(){
+        return (1.0*a)/b;
+    }
     public Scalar add(Scalar s) {//use GCD?
         if (s == null || !isMatch(s)) return null;
         int a = this.a * ((RationalScalar) s).b + this.b * ((RationalScalar) s).a;
@@ -45,7 +48,7 @@ public class RationalScalar extends Scalar {
 
     public String toString() {
         String returnValue;
-        if (a % b == 0) returnValue = "(" + a / b + ")";// is it casting?
+        if (a % b == 0) returnValue = a / b+"";// is it casting?
         else returnValue = "(" + a + "/" + b + ")";
         return returnValue;
     }
