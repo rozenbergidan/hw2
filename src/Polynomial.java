@@ -49,12 +49,14 @@ public class Polynomial {
 
     }
 
-    public Polynomial clone() {
-        Polynomial ans = new Polynomial();
-        for (Monomial mono : monomials)
+
+    public Polynomial clone(){
+        Polynomial ans=new Polynomial();
+        for(Monomial mono: monomials)
             ans.monomials.add(mono);
         return ans;
     }
+
 
     public Polynomial add(Polynomial p) {
         if (!isMatch(p)) return null;
@@ -128,6 +130,7 @@ public class Polynomial {
         return ans;
     }
 
+
     public Polynomial mul(Polynomial p) {
         if (!isMatch(p)) return null;
         Polynomial ans = new Polynomial();
@@ -171,7 +174,12 @@ public class Polynomial {
             else
                 str = str + mono.toString();
         }
-        if (str.charAt(0) == '+') str = str.substring(1);
+        if (str.length() == 0){
+            str = "0";
+        }
+        else {
+            if (str.charAt(0) == '+') str = str.substring(1);
+        }
         return str;
     }
 
