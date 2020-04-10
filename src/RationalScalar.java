@@ -49,7 +49,13 @@ public class RationalScalar extends Scalar {
     public String toString() {
         String returnValue;
         if (a % b == 0) returnValue = a / b+"";// is it casting?
-        else returnValue = "(" + a + "/" + b + ")";
+        else {
+            if (b < 0) {
+                a = -a;
+                b = -b;
+            }
+            returnValue = "(" + a + "/" + b + ")";
+        }
         return returnValue;
     }
 }

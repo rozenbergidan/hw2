@@ -101,7 +101,7 @@ public class Polynomial {
             }
             ans.monomials.add(thismono);
             }
-git 
+
         while (pIter.hasNext() | !pmNext) {
             if(!tmNext & pmono.getExp() >= thismono.getExp()){
                 if(pmono.getExp() == thismono.getExp()) {
