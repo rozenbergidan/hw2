@@ -59,11 +59,17 @@ public class Polynomial {
         Monomial pmono = null;
         boolean tmNext = true;
         boolean pmNext = true;
-        while (thisIter.hasNext() & pIter.hasNext()) {
-            if(pmNext) pmono = pIter.next();
-            if(tmNext) thismono = thisIter.next();
-            pmNext = false;
-            tmNext = false;
+        while ((thisIter.hasNext() & pIter.hasNext())){
+            if(pmNext){
+                pmono = pIter.next();
+                pmNext = false;
+            }
+            if(tmNext){
+                thismono = thisIter.next();
+                tmNext = false;
+            }
+
+
             if (pmono.getExp() < thismono.getExp()) {
                 ans.monomials.add(pmono);
                 pmNext=true;
@@ -79,12 +85,37 @@ public class Polynomial {
             }
         }
 
-        while (thisIter.hasNext()) {
-            thismono = thisIter.next();
+        while (thisIter.hasNext() | !tmNext) {
+            if (tmNext){
+                thismono = thisIter.next();
+                }
+            tmNext = true;
+            if(!pmNext & pmono.getExp() <= thismono.getExp()){
+                if(pmono.getExp() == thismono.getExp()) {
+                    Monomial temp = thismono.add(pmono);
+                    if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
+                        ans.monomials.add(temp);
+                }
+                ans.monomials.add(pmono);
+                pmNext = true;
+            }
             ans.monomials.add(thismono);
             }
-        while (pIter.hasNext()) {
-            pmono = pIter.next();
+
+        while (pIter.hasNext() | !pmNext) {
+            if(!tmNext & pmono.getExp() >= thismono.getExp()){
+                if(pmono.getExp() == thismono.getExp()) {
+                    Monomial temp = thismono.add(pmono);
+                    if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
+                        ans.monomials.add(temp);
+                }
+                else ans.monomials.add(thismono);
+                tmNext = true;
+            }
+            if (pmNext){
+                pmono = pIter.next();
+            }
+            pmNext = true;
             ans.monomials.add(pmono);
         }
     return ans;
