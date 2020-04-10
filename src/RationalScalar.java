@@ -1,4 +1,6 @@
-public class RationalScalar extends Scalar {
+import sun.reflect.generics.visitor.Visitor;
+
+public class RationalScalar implements Scalar {
     private int a;
     private int b;
 
@@ -7,6 +9,10 @@ public class RationalScalar extends Scalar {
         if (b == 0) throw new IllegalArgumentException("cannot divide by zero");
         this.a = a;
         this.b = b;
+    }
+
+    public boolean isMatch(Scalar s) {
+        return s instanceof RationalScalar;
     }
 
     public double getValue(){
@@ -44,6 +50,12 @@ public class RationalScalar extends Scalar {
         if (a * b > 0) return 1;
         else if (a * b < 0) return -1;
         else return 0;
+    }
+
+    @Override
+    public boolean accept(ScalarVisitor v) {
+        v.visitRationalScalar(this);
+        return true;
     }
 
     public String toString() {
