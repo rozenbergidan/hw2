@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 
-public class RealScalar extends Scalar {
+public class RealScalar implements Scalar {
     private double v;
 
     public RealScalar(double x) {
@@ -9,6 +9,9 @@ public class RealScalar extends Scalar {
         v = x;
     }
 
+    public boolean isMatch(Scalar s){
+        return s instanceof RealScalar;
+    }
 
     public double getValue() {
         return v;
@@ -40,6 +43,12 @@ public class RealScalar extends Scalar {
         if (v > 0) return 1;
         else if (v < 0) return -1;
         else return 0; // should not happend
+    }
+
+    @Override
+    public boolean accept(ScalarVisitor v) {
+        return v.visitRealScalar(this);
+
     }
 
     public String toString() {
