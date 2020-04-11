@@ -61,8 +61,8 @@ public class Monomial {
 //            else str=coe.toString()+"x^"+exp;
 //        }
 
-        if (!(coe.getValue() == 1 | coe.getValue() == -1) | exp == 0) str = str + coe.toString();
-        if(str == "" & coe.getValue() == -1) str = "-" +str;
+        if (!(coe.toString().equals("1") | coe.toString().equals("-1")) | exp == 0) str = str + coe.toString();
+        if(str == "" & coe.toString().equals("-1")) str = "-" +str;
         if (exp == 1) str = str + "x";
         if (exp > 1) str = str + "x^" + exp;
         

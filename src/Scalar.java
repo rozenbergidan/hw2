@@ -22,6 +22,7 @@ public interface Scalar {
 
     public int sign();
 
-    public boolean accept(ScalarVisitor v);
+    public boolean accept(ScalarVisitor v, RealScalar s);
+    public boolean accept(ScalarVisitor v, RationalScalar s);
 
 }

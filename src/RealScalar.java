@@ -10,7 +10,8 @@ public class RealScalar implements Scalar {
     }
 
     public boolean isMatch(Scalar s){
-        return s instanceof RealScalar;
+        IsMatchScalarVisitor sv = new IsMatchScalarVisitor();
+        return s.accept(sv, this);
     }
 
     public double getValue() {
@@ -19,12 +20,12 @@ public class RealScalar implements Scalar {
 
     public Scalar add(Scalar s) {
         if (s == null || !isMatch(s)) return null;
-        return new RealScalar(v + ((RealScalar) s).v);
+        return new RealScalar(v + s.getValue());
     }
 
     public Scalar mul(Scalar s) {
         if (s == null || !isMatch(s)) return null;
-        return new RealScalar(v * ((RealScalar) s).v);
+        return new RealScalar(v * s.getValue());
     }
 
     public Scalar mul(int i) {
@@ -46,7 +47,12 @@ public class RealScalar implements Scalar {
     }
 
     @Override
-    public boolean accept(ScalarVisitor v) {
+    public boolean accept(ScalarVisitor v, RationalScalar s) {
+        return v.visitRationalScalar(this);
+
+    }
+
+    public boolean accept(ScalarVisitor v, RealScalar s) {
         return v.visitRealScalar(this);
 
     }
