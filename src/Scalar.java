@@ -1,13 +1,6 @@
 
 public interface Scalar {
 
-//    /**
-////     * learn about:  virtualization, double dispatch and visitor pattern to get 15 points
-////     */
-////    public boolean isMatch(Scalar s) {
-////        return ((this instanceof RealScalar & s instanceof RealScalar) | (this instanceof RationalScalar & s instanceof RationalScalar));
-////    }
-
     public boolean isMatch(Scalar v);
 
     public double getValue();
@@ -22,6 +15,7 @@ public interface Scalar {
 
     public int sign();
 
-    public boolean accept(ScalarVisitor v);
+    public boolean accept(ScalarVisitor v, RealScalar s);
+    public boolean accept(ScalarVisitor v, RationalScalar s);
 
 }

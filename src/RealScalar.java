@@ -4,15 +4,12 @@ public class RealScalar implements Scalar {
     private double v;
 
     public RealScalar(double x) {
-//        if (x == 0)
-//            throw new IllegalArgumentException("Coefficient can't be 0");
         v = x;
     }
 
     public boolean isMatch(Scalar s){
-        return s instanceof RealScalar;
-//        ScalarVisitor sv=new IsMatchScalarVisitor();
-//        sv.visitRealScalar(this);
+        IsMatchScalarVisitor sv = new IsMatchScalarVisitor();
+        return s.accept(sv, this);
     }
 
     public double getValue() {
@@ -21,12 +18,12 @@ public class RealScalar implements Scalar {
 
     public Scalar add(Scalar s) {
         if (s == null || !isMatch(s)) return null;
-        return new RealScalar(v + ((RealScalar) s).v);
+        return new RealScalar(v + s.getValue());
     }
 
     public Scalar mul(Scalar s) {
         if (s == null || !isMatch(s)) return null;
-        return new RealScalar(v * ((RealScalar) s).v);
+        return new RealScalar(v * s.getValue());
     }
 
     public Scalar mul(int i) {
@@ -38,7 +35,6 @@ public class RealScalar implements Scalar {
         for (int i = 0; i < exp; i++)
             x *= v;
         return new RealScalar(x);
-
     }
 
     public int sign() {
@@ -48,9 +44,12 @@ public class RealScalar implements Scalar {
     }
 
     @Override
-    public boolean accept(ScalarVisitor v) {
-        return v.visitRealScalar(this);
+    public boolean accept(ScalarVisitor v, RationalScalar s) {
+        return v.visitRationalScalar(this);
+    }
 
+    public boolean accept(ScalarVisitor v, RealScalar s) {
+        return v.visitRealScalar(this);
     }
 
     public String toString() {

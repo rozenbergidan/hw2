@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw2/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Calculator.class" afterDir="false" />
+=======
+    <list default="true" id="45a52f42-19ce-42b2-8fc9-a85ce1f0f206" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AddScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 0a838bf47e01f0d90b841c2056963e65dc4f3bf2
       <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Monomial.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw2/Scalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Scalar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw2/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Test.class" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RationalScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RationalScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+>>>>>>> 0a838bf47e01f0d90b841c2056963e65dc4f3bf2
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +87,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="" />
+      <changelist id="45a52f42-19ce-42b2-8fc9-a85ce1f0f206" name="Default Changelist" comment="" />
       <created>1586167755499</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

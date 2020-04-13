@@ -12,7 +12,8 @@ public class RationalScalar implements Scalar {
     }
 
     public boolean isMatch(Scalar s) {
-        return s instanceof RationalScalar;
+        IsMatchScalarVisitor sv = new IsMatchScalarVisitor();
+        return s.accept(sv, this);
     }
 
     public double getValue(){
@@ -53,9 +54,12 @@ public class RationalScalar implements Scalar {
     }
 
     @Override
-    public boolean accept(ScalarVisitor v) {
-        v.visitRationalScalar(this);
-        return true;
+    public boolean accept(ScalarVisitor v, RealScalar s) {
+        return v.visitRationalScalar(s);
+    }
+
+    public boolean accept(ScalarVisitor v, RationalScalar s) {
+        return v.visitRationalScalar(s);
     }
 
     public String toString() {

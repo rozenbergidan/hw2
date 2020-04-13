@@ -1,10 +1,14 @@
-public class IsMatchScalarVisitor implements ScalarVisitor{
+public class IsMatchScalarVisitor implements ScalarVisitor {
     @Override
     public boolean visitRealScalar(RealScalar rs) {
         return true;
     }
 
-    public boolean visitRealScalar(Scalar s){
+    public boolean visitRealScalar(RationalScalar rs) {
+        return false;
+    }
+
+    public boolean visitRealScalar(Scalar s) {
         return false;
     }
 
@@ -12,7 +16,8 @@ public class IsMatchScalarVisitor implements ScalarVisitor{
     public boolean visitRationalScalar(RationalScalar rs) {
         return true;
     }
-    public boolean visitRationalScalar(RealScalar rs){
+
+    public boolean visitRationalScalar(RealScalar rs) {
         return false;
     }
 }

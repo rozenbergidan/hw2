@@ -49,17 +49,22 @@ public class Monomial {
 
     public String toString() {
         String str = "";
-        if(exp==0) str=coe.toString();
-        else if(exp==1){
-            if(coe.getValue()==1) str="x";
-            else if(coe.getValue() ==-1) str="-x";
-            else str=coe.toString()+"x";
-        }
-        else{
-            if(coe.getValue()==1) str="x^"+exp;
-            else if(coe.getValue() ==-1) str="-x^"+exp;
-            else str=coe.toString()+"x^"+exp;
-        }
+//        if(exp==0) str=coe.toString();
+//        else if(exp==1){
+//            if(coe.getValue()==1) str="x";
+//            else if(coe.getValue() ==-1) str="-x";
+//            else str=coe.toString()+"x";
+//        }
+//        else{
+//            if(coe.getValue()==1) str="x^"+exp;
+//            else if(coe.getValue() ==-1) str="-x^"+exp;
+//            else str=coe.toString()+"x^"+exp;
+//        }
+
+        if (!(coe.toString().equals("1") | coe.toString().equals("-1")) | exp == 0) str = str + coe.toString();
+        if(str == "" & coe.toString().equals("-1")) str = "-" +str;
+        if (exp == 1) str = str + "x";
+        if (exp > 1) str = str + "x^" + exp;
         
         return str;
     }
