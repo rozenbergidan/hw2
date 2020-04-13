@@ -9,7 +9,8 @@ public class Polynomial {
         monomials = new LinkedList<>();
     }
 
-    public void build(char type, String input) { // TODO check if the biuld is according to the Instructions
+    public Polynomial build(char type, String input) { // TODO check if the biuld is according to the Instructions
+        Polynomial ans=new Polynomial();
         String[] coefficients = input.split(" ");
         int exp = 0;
         for (String coefficient : coefficients) {
@@ -21,19 +22,20 @@ public class Polynomial {
                         int b = 1;
                         if (n.length > 1) b = Integer.parseInt(n[1]);
                         RationalScalar c = new RationalScalar(a, b);
-                        monomials.add(new Monomial(c, exp));
+                        ans.monomials.add(new Monomial(c, exp));
                     }
                 } else {
                     double v = Double.parseDouble(coefficient);
                     if (v != 0) {
                         RealScalar c = new RealScalar(v);
-                        monomials.add(new Monomial(c, exp));
+                        ans.monomials.add(new Monomial(c, exp));
                     }
                 }
                 exp++;
             }
 
         }
+        return ans;
     }
 
     public boolean isMatch(Polynomial p) {

@@ -8,7 +8,7 @@ public interface Scalar {
 ////        return ((this instanceof RealScalar & s instanceof RealScalar) | (this instanceof RationalScalar & s instanceof RationalScalar));
 ////    }
 
-    public boolean isMatch(Scalar s);
+    public boolean isMatch(Scalar v);
 
     public double getValue();
 

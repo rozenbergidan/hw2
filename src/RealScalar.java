@@ -11,6 +11,8 @@ public class RealScalar implements Scalar {
 
     public boolean isMatch(Scalar s){
         return s instanceof RealScalar;
+//        ScalarVisitor sv=new IsMatchScalarVisitor();
+//        sv.visitRealScalar(this);
     }
 
     public double getValue() {
