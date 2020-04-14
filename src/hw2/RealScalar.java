@@ -1,3 +1,8 @@
+package hw2;
+
+import Visitor.IsMatchScalarVisitor;
+import Visitor.ScalarVisitor;
+
 import java.text.DecimalFormat;
 
 public class RealScalar implements Scalar {

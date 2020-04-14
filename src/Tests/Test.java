@@ -1,3 +1,8 @@
+package Tests;
+
+import hw2.*;
+
+
 public class Test {
     public static void main(String[] args){
         RealScalar n = new RealScalar(5);

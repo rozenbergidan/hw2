@@ -1,9 +1,10 @@
+package hw2;
+import Visitor.*;
+import Visitor.ScalarVisitor;
 
 public interface Scalar {
 
     public boolean isMatch(Scalar v);
-
-    public double getValue();
 
     public Scalar add(Scalar s);
 
@@ -15,7 +16,7 @@ public interface Scalar {
 
     public int sign();
 
-    public boolean accept(ScalarVisitor v, RealScalar s);
-    public boolean accept(ScalarVisitor v, RationalScalar s);
+    public void accept(ScalarVisitor v, RealScalar s);
+    public void accept(ScalarVisitor v, RationalScalar s);
 
 }

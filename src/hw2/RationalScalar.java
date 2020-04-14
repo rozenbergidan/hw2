@@ -1,4 +1,4 @@
-import sun.reflect.generics.visitor.Visitor;
+package hw2;
 
 public class RationalScalar implements Scalar {
     private int a;
@@ -16,8 +16,11 @@ public class RationalScalar implements Scalar {
         return s.accept(sv, this);
     }
 
-    public double getValue(){
-        return (1.0*a)/b;
+    public int getA(){
+        return a;
+    }
+    public int getB(){
+        return b;
     }
     public Scalar add(Scalar s) {//use GCD?
         if (s == null || !isMatch(s)) return null;

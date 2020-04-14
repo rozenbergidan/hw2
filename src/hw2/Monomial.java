@@ -1,3 +1,5 @@
+package hw2;
+
 public class Monomial {
     private Scalar coe;
     private int exp;

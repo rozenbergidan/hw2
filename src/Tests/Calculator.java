@@ -1,22 +1,24 @@
-//public class Calculator {
+package Tests;
+import hw2.*;
+//public class Tests.Calculator {
 //
 //    public static void printTitle(String s) {
 //        System.out.println("\n========== " + s + " ==========");
 //    }
 //
-//    public static void printAdd(Polynomial p1, Polynomial p2, Polynomial res) {
+//    public static void printAdd(hw2.Polynomial p1, hw2.Polynomial p2, hw2.Polynomial res) {
 //        System.out.println("[" + p1 + "]+[" + p2 + "]=" + res);
 //    }
 //
-//    public static void printMul(Polynomial p1, Polynomial p2, Polynomial res) {
+//    public static void printMul(hw2.Polynomial p1, hw2.Polynomial p2, hw2.Polynomial res) {
 //        System.out.println("[" + p1 + "]*[" + p2 + "]=" + res);
 //    }
 //
-//    public static void printEval(Polynomial p, Scalar s, Scalar res) {
+//    public static void printEval(hw2.Polynomial p, hw2.Scalar s, hw2.Scalar res) {
 //        System.out.println("eval(" + p + "," + s + ")=" + res);
 //    }
 //
-//    public static void printDerivate(Polynomial p, Polynomial d) {
+//    public static void printDerivate(hw2.Polynomial p, hw2.Polynomial d) {
 //        System.out.println("derivate(" + p + ")=" + d);
 //    }
 //
@@ -24,15 +26,15 @@
 //
 //    public static void main(String[] args) {
 //
-//        Polynomial R1 = new Polynomial(); R1.build('R', "0.5 1");
-//        Polynomial R2 = new Polynomial(); R2.build('R', "1 0 -1 0 0.25");
-//        Polynomial R3 = new Polynomial(); R3.build('R', "5 0 -2");
-//        Polynomial R4 = new Polynomial(); R4.build('R', "5");
-//        Polynomial Q1 = new Polynomial(); Q1.build('Q', "2/-1");
-//        Polynomial Q2 = new Polynomial(); Q2.build('Q', "1/2 1 0 8");
-//        Polynomial Q3 = new Polynomial(); Q3.build('Q', "0 0 100");
-//        Polynomial Q4 = new Polynomial(); Q4.build('Q', "0 -1");
-//        Polynomial Q5 = new Polynomial(); Q5.build('Q', "0 -1/-2");
+//        hw2.Polynomial R1 = new hw2.Polynomial(); R1.build('R', "0.5 1");
+//        hw2.Polynomial R2 = new hw2.Polynomial(); R2.build('R', "1 0 -1 0 0.25");
+//        hw2.Polynomial R3 = new hw2.Polynomial(); R3.build('R', "5 0 -2");
+//        hw2.Polynomial R4 = new hw2.Polynomial(); R4.build('R', "5");
+//        hw2.Polynomial Q1 = new hw2.Polynomial(); Q1.build('Q', "2/-1");
+//        hw2.Polynomial Q2 = new hw2.Polynomial(); Q2.build('Q', "1/2 1 0 8");
+//        hw2.Polynomial Q3 = new hw2.Polynomial(); Q3.build('Q', "0 0 100");
+//        hw2.Polynomial Q4 = new hw2.Polynomial(); Q4.build('Q', "0 -1");
+//        hw2.Polynomial Q5 = new hw2.Polynomial(); Q5.build('Q', "0 -1/-2");
 //
 //
 //        //Add Tests
@@ -68,12 +70,12 @@
 //
 //        //Evaluate Tests
 //        printTitle("Testing Evaluate");
-//        RealScalar r = new RealScalar(1);
+//        hw2.RealScalar r = new hw2.RealScalar(1);
 //        printEval(R1, r, R1.evaluate(r));
 //        printEval(R2, r, R2.evaluate(r));
 //        printEval(R3, r, R3.evaluate(r));
 //        printEval(R4, r, R4.evaluate(r));
-//        RationalScalar q = new RationalScalar(1,1);
+//        hw2.RationalScalar q = new hw2.RationalScalar(1,1);
 //        printEval(Q1, q, Q1.evaluate(q));
 //        printEval(Q2, q, Q2.evaluate(q));
 //        printEval(Q3, q, Q3.evaluate(q));

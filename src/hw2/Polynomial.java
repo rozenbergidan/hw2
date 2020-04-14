@@ -1,3 +1,5 @@
+package hw2;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -64,10 +66,10 @@ public class Polynomial {
         Polynomial ans = new Polynomial();
         if (p.monomials.isEmpty()) ans = clone();
         else {
-//            Iterator<Monomial> thisIter = monomials.iterator();
-//            Iterator<Monomial> pIter = p.monomials.iterator();
-//            Monomial thismono = null;
-//            Monomial pmono = null;
+//            Iterator<hw2.Monomial> thisIter = monomials.iterator();
+//            Iterator<hw2.Monomial> pIter = p.monomials.iterator();
+//            hw2.Monomial thismono = null;
+//            hw2.Monomial pmono = null;
 //            boolean tmNext = true;
 //            boolean pmNext = true;
 //            while ((thisIter.hasNext() & pIter.hasNext())) {
@@ -87,7 +89,7 @@ public class Polynomial {
 //                    ans.monomials.add(thismono);
 //                    tmNext = true;
 //                } else {
-//                    Monomial temp = thismono.add(pmono);
+//                    hw2.Monomial temp = thismono.add(pmono);
 //                    if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
 //                        ans.monomials.add(temp);
 //                    tmNext = true;
@@ -102,7 +104,7 @@ public class Polynomial {
 //                tmNext = true;
 //                if (!pmNext & pmono.getExp() <= thismono.getExp()) {
 //                    if (pmono.getExp() == thismono.getExp()) {
-//                        Monomial temp = thismono.add(pmono);
+//                        hw2.Monomial temp = thismono.add(pmono);
 //                        if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
 //                            ans.monomials.add(temp);
 //                    }
@@ -115,7 +117,7 @@ public class Polynomial {
 //            while (pIter.hasNext() | !pmNext) {
 //                if (!tmNext & pmono.getExp() >= thismono.getExp()) {
 //                    if (pmono.getExp() == thismono.getExp()) {
-//                        Monomial temp = thismono.add(pmono);
+//                        hw2.Monomial temp = thismono.add(pmono);
 //                        if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
 //                            ans.monomials.add(temp);
 //                    } else ans.monomials.add(thismono);
