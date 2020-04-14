@@ -1,39 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Calculator.class" afterDir="false" />
-=======
-    <list default="true" id="45a52f42-19ce-42b2-8fc9-a85ce1f0f206" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
->>>>>>> 0a838bf47e01f0d90b841c2056963e65dc4f3bf2
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Monomial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Scalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Scalar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Test.class" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RationalScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RationalScalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
->>>>>>> 0a838bf47e01f0d90b841c2056963e65dc4f3bf2
->>>>>>> 04b922d2f734bcac8543c576ca5fa3d1182d17c5
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/IsMatchScalarVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Scalar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/ScalarVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw2/RationalScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/RationalScalar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+    <option name="RECENT_TEMPLATES" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +38,25 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.Calculator">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\97254\Desktop\BGU\SemB\OOP\hw2\hw2\src\Visitor" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Calculator (1)">
+    <configuration name="Calculator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tests.Calculator" />
+      <module name="hw2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Calculator" />
       <module name="hw2" />
@@ -79,8 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Calculator (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -141,22 +134,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="309" y="29" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1586540959060" />
-    <state width="1225" height="3" key="GridCell.Tab.0.bottom" timestamp="1586779801500">
+    <state width="1225" height="3" key="GridCell.Tab.0.bottom" timestamp="1586868183456">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="3" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586779801500" />
-    <state width="1225" height="3" key="GridCell.Tab.0.center" timestamp="1586779801500">
+    <state width="1225" height="3" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586868183456" />
+    <state width="1225" height="3" key="GridCell.Tab.0.center" timestamp="1586868183456">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="3" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586779801500" />
-    <state width="1225" height="3" key="GridCell.Tab.0.left" timestamp="1586779801499">
+    <state width="1225" height="3" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586868183456" />
+    <state width="1225" height="3" key="GridCell.Tab.0.left" timestamp="1586868183455">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="3" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586779801499" />
-    <state width="1225" height="3" key="GridCell.Tab.0.right" timestamp="1586779801500">
+    <state width="1225" height="3" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586868183455" />
+    <state width="1225" height="3" key="GridCell.Tab.0.right" timestamp="1586868183456">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="3" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586779801500" />
+    <state width="1225" height="3" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586868183456" />
     <state width="1225" height="119" key="GridCell.Tab.1.bottom" timestamp="1586529861741">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
