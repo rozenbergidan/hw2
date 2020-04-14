@@ -1,4 +1,6 @@
-import sun.reflect.generics.visitor.Visitor;
+package hw2;
+
+import Visitor.*;
 
 public class RationalScalar implements Scalar {
     private int a;
@@ -13,24 +15,31 @@ public class RationalScalar implements Scalar {
 
     public boolean isMatch(Scalar s) {
         IsMatchScalarVisitor sv = new IsMatchScalarVisitor();
-        return s.accept(sv, this);
+        s.accept(sv, this);
+        return sv.isMatch();
     }
 
-    public double getValue(){
-        return (1.0*a)/b;
+    public int getA(){
+        return a;
     }
+
+    public int getB(){
+        return b;
+    }
+
     public Scalar add(Scalar s) {//use GCD?
-        if (s == null || !isMatch(s)) return null;
-        int a = this.a * ((RationalScalar) s).b + this.b * ((RationalScalar) s).a;
-        int b = this.b * ((RationalScalar) s).b;
-        return new RationalScalar(a, b);
+        if (!isMatch(s)) return null;
+        AddScalarVisitor asv = new AddScalarVisitor();
+        s.accept(asv, this);
+        return asv.add();
     }
 
     public Scalar mul(Scalar s) {//use GCD?
-        if (s == null || !isMatch(s)) return null;
-        int a = this.a * ((RationalScalar) s).a;
-        int b = this.b * ((RationalScalar) s).b;
-        return new RationalScalar(a, b);
+        if (!isMatch(s)) return null;
+        MulScalarVisitor msv = new MulScalarVisitor();
+        s.accept(msv, this);
+        return msv.mul();
+
     }
 
     public Scalar mul(int i) {
@@ -54,14 +63,12 @@ public class RationalScalar implements Scalar {
     }
 
     @Override
-    public boolean accept(ScalarVisitor v, RealScalar s) {
-        return v.visitRationalScalar(s);
-
+    public void accept(ScalarVisitor v, RealScalar s) {
+        v.visitRationalScalar(this, s);
     }
 
-    public boolean accept(ScalarVisitor v, RationalScalar s) {
-        return v.visitRationalScalar(s);
-
+    public void accept(ScalarVisitor v, RationalScalar s) {
+        v.visitRationalScalar(this, s);
     }
 
     public String toString() {

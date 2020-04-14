@@ -1,11 +1,14 @@
+package hw2;
+
+import Visitor.IsMatchScalarVisitor;
+import Visitor.ScalarVisitor;
+
 import java.text.DecimalFormat;
 
 public class RealScalar implements Scalar {
     private double v;
 
     public RealScalar(double x) {
-//        if (x == 0)
-//            throw new IllegalArgumentException("Coefficient can't be 0");
         v = x;
     }
 
@@ -37,7 +40,6 @@ public class RealScalar implements Scalar {
         for (int i = 0; i < exp; i++)
             x *= v;
         return new RealScalar(x);
-
     }
 
     public int sign() {
@@ -49,12 +51,10 @@ public class RealScalar implements Scalar {
     @Override
     public boolean accept(ScalarVisitor v, RationalScalar s) {
         return v.visitRationalScalar(this);
-
     }
 
     public boolean accept(ScalarVisitor v, RealScalar s) {
         return v.visitRealScalar(this);
-
     }
 
     public String toString() {

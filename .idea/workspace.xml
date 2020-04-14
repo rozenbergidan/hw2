@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Calculator.class" afterDir="false" />
+=======
     <list default="true" id="45a52f42-19ce-42b2-8fc9-a85ce1f0f206" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+>>>>>>> 0a838bf47e01f0d90b841c2056963e65dc4f3bf2
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Monomial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Scalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Scalar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Test.class" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RationalScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RationalScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+>>>>>>> 0a838bf47e01f0d90b841c2056963e65dc4f3bf2
+>>>>>>> 04b922d2f734bcac8543c576ca5fa3d1182d17c5
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,18 +61,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Calculator">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -83,6 +101,10 @@
       <workItem from="1586443581765" duration="883000" />
       <workItem from="1586447006682" duration="8253000" />
       <workItem from="1586526916311" duration="2783000" />
+      <workItem from="1586534736837" duration="6530000" />
+      <workItem from="1586617215287" duration="1504000" />
+      <workItem from="1586779366417" duration="435000" />
+      <workItem from="1586792752446" duration="266000" />
     </task>
     <servers />
   </component>
@@ -103,62 +125,38 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586526926376">
+    <state x="402" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1586617736387">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="587" y="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1586526926376" />
+    <state x="402" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1586617736387" />
+    <state x="587" y="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586534741095">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="587" y="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1586534741095" />
     <state x="400" y="132" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1586456111259">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="400" y="132" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1280.680@0.0.1280.680" timestamp="1586456111259" />
-    <state width="1225" height="67" key="GridCell.Tab.0.bottom" timestamp="1586528446950">
+    <state x="309" y="29" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586540959060">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586528446950" />
-    <state width="1225" height="67" key="GridCell.Tab.0.center" timestamp="1586528446947">
+    <state x="309" y="29" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1586540959060" />
+    <state width="1225" height="3" key="GridCell.Tab.0.bottom" timestamp="1586779801500">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586528446947" />
-    <state width="1225" height="67" key="GridCell.Tab.0.left" timestamp="1586528446946">
+    <state width="1225" height="3" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586779801500" />
+    <state width="1225" height="3" key="GridCell.Tab.0.center" timestamp="1586779801500">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586528446946" />
-    <state width="1225" height="67" key="GridCell.Tab.0.right" timestamp="1586528446949">
+    <state width="1225" height="3" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586779801500" />
+    <state width="1225" height="3" key="GridCell.Tab.0.left" timestamp="1586779801499">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586528446949" />
-    <state width="1225" height="67" key="GridCell.Tab.1.bottom" timestamp="1586528447288">
+    <state width="1225" height="3" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586779801499" />
+    <state width="1225" height="3" key="GridCell.Tab.0.right" timestamp="1586779801500">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="67" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586528447288" />
-    <state width="1225" height="67" key="GridCell.Tab.1.center" timestamp="1586528447288">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1225" height="67" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586528447288" />
-    <state width="1225" height="67" key="GridCell.Tab.1.left" timestamp="1586528447287">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1225" height="67" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586528447287" />
-    <state width="1225" height="67" key="GridCell.Tab.1.right" timestamp="1586528447288">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1225" height="67" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586528447288" />
-    <state width="1225" height="291" key="GridCell.Tab.0.bottom" timestamp="1586529647036">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1225" height="54" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586531146075" />
-    <state width="1225" height="54" key="GridCell.Tab.0.center" timestamp="1586531146074">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1225" height="54" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586531146074" />
-    <state width="1225" height="54" key="GridCell.Tab.0.left" timestamp="1586531146074">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1225" height="54" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586531146074" />
-    <state width="1225" height="54" key="GridCell.Tab.0.right" timestamp="1586531146075">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1225" height="54" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586531146075" />
+    <state width="1225" height="3" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586779801500" />
     <state width="1225" height="119" key="GridCell.Tab.1.bottom" timestamp="1586529861741">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
