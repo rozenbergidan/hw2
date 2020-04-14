@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45a52f42-19ce-42b2-8fc9-a85ce1f0f206" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AddScalarVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Monomial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Scalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Scalar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchScalarVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monomial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RationalScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RationalScalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealScalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScalarVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
