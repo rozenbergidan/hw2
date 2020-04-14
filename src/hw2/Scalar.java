@@ -18,6 +18,4 @@ public interface Scalar {
 
     public void accept(ScalarVisitor v, RealScalar s);
     public void accept(ScalarVisitor v, RationalScalar s);
-
-    void accept(IsMatchScalarVisitor sv, RationalScalar rationalScalar);
 }

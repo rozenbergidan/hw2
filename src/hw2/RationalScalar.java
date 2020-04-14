@@ -16,27 +16,30 @@ public class RationalScalar implements Scalar {
     public boolean isMatch(Scalar s) {
         IsMatchScalarVisitor sv = new IsMatchScalarVisitor();
         s.accept(sv, this);
-        return sv.isMatch()
+        return sv.isMatch();
     }
 
-    public int getA(){
+    public int getA() {
         return a;
     }
-    public int getB(){
+
+    public int getB() {
         return b;
     }
+
     public Scalar add(Scalar s) {//use GCD?
-        if (s == null || !isMatch(s)) return null;
-        int a = this.a * ((RationalScalar) s).b + this.b * ((RationalScalar) s).a;
-        int b = this.b * ((RationalScalar) s).b;
-        return new RationalScalar(a, b);
+        if (!isMatch(s)) return null;
+        AddScalarVisitor asv = new AddScalarVisitor();
+        s.accept(asv, this);
+        return asv.add();
     }
 
     public Scalar mul(Scalar s) {//use GCD?
-        if (s == null || !isMatch(s)) return null;
-        int a = this.a * ((RationalScalar) s).a;
-        int b = this.b * ((RationalScalar) s).b;
-        return new RationalScalar(a, b);
+        if (!isMatch(s)) return null;
+        MulScalarVisitor msv = new MulScalarVisitor();
+        s.accept(msv, this);
+        return msv.mul();
+
     }
 
     public Scalar mul(int i) {
@@ -61,18 +64,17 @@ public class RationalScalar implements Scalar {
 
     @Override
     public void accept(ScalarVisitor v, RealScalar s) {
-
+        v.visitRationalScalar(this, s);
     }
 
 
-    @Override
-    public void accept(IsMatchScalarVisitor sv, RationalScalar rationalScalar) {
-
+    public void accept(ScalarVisitor v, RationalScalar s) {
+        v.visitRationalScalar(this, s);
     }
 
     public String toString() {
         String returnValue;
-        if (a % b == 0) returnValue = a / b+""; // is it casting?
+        if (a % b == 0) returnValue = a / b + ""; // is it casting?
         else {
             if (b < 0) {
                 a = -a;

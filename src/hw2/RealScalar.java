@@ -53,7 +53,7 @@ public class RealScalar implements Scalar {
 
     @Override
     public void accept(ScalarVisitor v, RationalScalar s) {
-        v.visitRationalScalar(s, this);
+        v.visitRealScalar(this, s);
     }
 
     public void accept(ScalarVisitor v, RealScalar s) {
