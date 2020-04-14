@@ -1,7 +1,6 @@
 package hw2;
 
-import Visitor.IsMatchScalarVisitor;
-import Visitor.ScalarVisitor;
+import Visitor.*;
 
 import java.text.DecimalFormat;
 
@@ -13,24 +12,28 @@ public class RealScalar implements Scalar {
     }
 
     public boolean isMatch(Scalar s){
+        if(s == null) return false;
         IsMatchScalarVisitor sv = new IsMatchScalarVisitor();
-        return s.accept(sv, this);
-    }
-
-    public double getValue() {
-        return v;
+        s.accept(sv, this);
+        return sv.isMatch();
     }
 
     public Scalar add(Scalar s) {
-        if (s == null || !isMatch(s)) return null;
-        return new RealScalar(v + s.getValue());
+        if (!isMatch(s)) return null;
+        AddScalarVisitor sv = new AddScalarVisitor();
+        s.accept(sv,this);
+        return sv.add();
     }
 
     public Scalar mul(Scalar s) {
-        if (s == null || !isMatch(s)) return null;
-        return new RealScalar(v * s.getValue());
+        if (!isMatch(s)) return null;
+        MulScalarVisitor sv = new MulScalarVisitor();
+        s.accept(sv,this);
+        return sv.mul();
     }
-
+    public double getValue() {
+        return v;
+    }
     public Scalar mul(int i) {
         return new RealScalar(v * i);
     }
@@ -49,12 +52,12 @@ public class RealScalar implements Scalar {
     }
 
     @Override
-    public boolean accept(ScalarVisitor v, RationalScalar s) {
-        return v.visitRationalScalar(this);
+    public void accept(ScalarVisitor v, RationalScalar s) {
+        v.visitRationalScalar(s, this);
     }
 
-    public boolean accept(ScalarVisitor v, RealScalar s) {
-        return v.visitRealScalar(this);
+    public void accept(ScalarVisitor v, RealScalar s) {
+        v.visitRealScalar(this,s);
     }
 
     public String toString() {

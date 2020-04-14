@@ -10,7 +10,7 @@ public class IsMatchScalarVisitor implements ScalarVisitor {
         isMatch=true;
     }
 
-    @Override
+
     public void visitRealScalar(RealScalar rs1, RationalScalar rs2) {
         isMatch=false;
     }
@@ -20,7 +20,6 @@ public class IsMatchScalarVisitor implements ScalarVisitor {
         isMatch=true;
     }
 
-    @Override
     public void visitRationalScalar(RationalScalar rs1, RealScalar rs2) {
         isMatch=false;
     }

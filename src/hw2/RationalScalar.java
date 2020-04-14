@@ -1,5 +1,7 @@
 package hw2;
 
+import Visitor.*;
+
 public class RationalScalar implements Scalar {
     private int a;
     private int b;
@@ -13,7 +15,8 @@ public class RationalScalar implements Scalar {
 
     public boolean isMatch(Scalar s) {
         IsMatchScalarVisitor sv = new IsMatchScalarVisitor();
-        return s.accept(sv, this);
+        s.accept(sv, this);
+        return sv.isMatch()
     }
 
     public int getA(){
@@ -57,12 +60,14 @@ public class RationalScalar implements Scalar {
     }
 
     @Override
-    public boolean accept(ScalarVisitor v, RealScalar s) {
-        return v.visitRationalScalar(s);
+    public void accept(ScalarVisitor v, RealScalar s) {
+
     }
 
-    public boolean accept(ScalarVisitor v, RationalScalar s) {
-        return v.visitRationalScalar(s);
+
+    @Override
+    public void accept(IsMatchScalarVisitor sv, RationalScalar rationalScalar) {
+
     }
 
     public String toString() {
