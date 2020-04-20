@@ -11,7 +11,8 @@ public class Polynomial {
         monomials = new LinkedList<>();
     }
 
-    public Polynomial build(char type, String input) { // TODO check if the biuld is according to the Instructions
+    // return polynomial as describe with "type" and "input"
+    public Polynomial build(char type, String input) {
         Polynomial ans=new Polynomial();
         String[] coefficients = input.split(" ");
         int exp = 0;
@@ -40,6 +41,7 @@ public class Polynomial {
         return ans;
     }
 
+    // Check is "p" is the same type polynomial as "this"
     public boolean isMatch(Polynomial p) {
         if (p == null) throw new IllegalArgumentException();
         Iterator<Monomial> iterThis = monomials.iterator();
@@ -52,83 +54,20 @@ public class Polynomial {
 
     }
 
-
-    public Polynomial clone(){
+    // function to assist add function
+    private Polynomial copy(){
         Polynomial ans=new Polynomial();
         for(Monomial mono: monomials)
             ans.monomials.add(mono);
         return ans;
     }
 
-
+    // return the sum of two polynomials
     public Polynomial add(Polynomial p) {
-        if (!isMatch(p)) return null;
+        if (!isMatch(p)) return null; // If true, the polynoms not matching.
         Polynomial ans = new Polynomial();
-        if (p.monomials.isEmpty()) ans = clone();
-        else {
-//            Iterator<hw2.Monomial> thisIter = monomials.iterator();
-//            Iterator<hw2.Monomial> pIter = p.monomials.iterator();
-//            hw2.Monomial thismono = null;
-//            hw2.Monomial pmono = null;
-//            boolean tmNext = true;
-//            boolean pmNext = true;
-//            while ((thisIter.hasNext() & pIter.hasNext())) {
-//                if (pmNext) {
-//                    pmono = pIter.next();
-//                    pmNext = false;
-//                }git pull
-//                if (tmNext) {
-//                    thismono = thisIter.next();
-//                    tmNext = false;
-//                }
-//
-//                if (pmono.getExp() < thismono.getExp()) {
-//                    ans.monomials.add(pmono);
-//                    pmNext = true;
-//                } else if (thismono.getExp() < pmono.getExp()) {
-//                    ans.monomials.add(thismono);
-//                    tmNext = true;
-//                } else {
-//                    hw2.Monomial temp = thismono.add(pmono);
-//                    if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
-//                        ans.monomials.add(temp);
-//                    tmNext = true;
-//                    pmNext = true;
-//                }
-//            }
-//
-//            while (thisIter.hasNext() | !tmNext) {
-//                if (tmNext) {
-//                    thismono = thisIter.next();
-//                }
-//                tmNext = true;
-//                if (!pmNext & pmono.getExp() <= thismono.getExp()) {
-//                    if (pmono.getExp() == thismono.getExp()) {
-//                        hw2.Monomial temp = thismono.add(pmono);
-//                        if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
-//                            ans.monomials.add(temp);
-//                    }
-//                    ans.monomials.add(pmono);
-//                    pmNext = true;
-//                }
-//                ans.monomials.add(thismono);
-//            }
-//
-//            while (pIter.hasNext() | !pmNext) {
-//                if (!tmNext & pmono.getExp() >= thismono.getExp()) {
-//                    if (pmono.getExp() == thismono.getExp()) {
-//                        hw2.Monomial temp = thismono.add(pmono);
-//                        if (temp.getScalar().sign() != 0) //TODO check whether can we get 0 as sign
-//                            ans.monomials.add(temp);
-//                    } else ans.monomials.add(thismono);
-//                    tmNext = true;
-//                }
-//                if (pmNext) {
-//                    pmono = pIter.next();
-//                }
-//                pmNext = true;
-//                ans.monomials.add(pmono);
-//            }
+        if (p.monomials.isEmpty()) ans = copy(); // If true, return polynom equals to "this"
+        else { //using iterators, add the polynoms
             Iterator<Monomial> thisIter = monomials.iterator();
             Iterator<Monomial> pIter = p.monomials.iterator();
             Monomial thisCurrent = null;
@@ -176,16 +115,16 @@ public class Polynomial {
                 else pCurrent = null;
             }
 
-            }
+        }
         return ans;
     }
 
-
+    // return the multiply of two polynomials
     public Polynomial mul(Polynomial p) {
         if (!isMatch(p)) return null;
         Polynomial ans = new Polynomial();
         Iterator<Monomial> thisIter = monomials.iterator();
-        while (thisIter.hasNext()) {
+        while (thisIter.hasNext()) { // For each monomial in this, multiply with each monomial if p
             Monomial thismono = thisIter.next();
             Polynomial temp = new Polynomial();
             for (Monomial mono : p.monomials) {
@@ -196,7 +135,7 @@ public class Polynomial {
         return ans;
 
     }
-
+    //evaluate the polynomial value
     public Scalar evaluate(Scalar scalar) {
         Scalar ans = scalar.mul(1);
         Scalar nega = scalar.mul(-1);
@@ -207,6 +146,7 @@ public class Polynomial {
         return ans;
     }
 
+    // return the derivative of the polynomial
     public Polynomial derivative() {
         Polynomial ans = new Polynomial();
         for (Monomial mono : monomials) {

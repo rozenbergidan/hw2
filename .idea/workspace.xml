@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
+    <list default="true" id="64ad9506-5ae5-4b55-9ee6-3c1b8a82126a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/IsMatchScalarVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Scalar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/ScalarVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/META-INF/hw2.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/META-INF/hw2.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Tests/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Tests/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Tests/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Tests/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Visitor/AddScalarVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Visitor/AddScalarVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Visitor/IsMatchScalarVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/Visitor/IsMatchScalarVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/hw2/Monomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/hw2/Monomial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/hw2/Polynomial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/hw2/Polynomial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/hw2/RationalScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/hw2/RationalScalar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/hw2/RealScalar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/hw2/RealScalar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visitor/AddScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visitor/AddScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visitor/IsMatchScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visitor/IsMatchScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visitor/MulScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visitor/MulScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visitor/ScalarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visitor/ScalarVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw2/Monomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/Monomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw2/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/Polynomial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hw2/RationalScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/RationalScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw2/RealScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/RealScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw2/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/Scalar.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +54,18 @@
       <recent name="C:\Users\97254\Desktop\BGU\SemB\OOP\hw2\hw2\src\Visitor" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Application.Calculator (1)">
     <configuration name="Calculator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tests.Calculator" />
@@ -64,6 +87,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tests.Test" />
+      <module name="hw2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="hw2" />
@@ -74,6 +110,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Calculator (1)" />
+        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -82,7 +119,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="45a52f42-19ce-42b2-8fc9-a85ce1f0f206" name="Default Changelist" comment="" />
+      <changelist id="64ad9506-5ae5-4b55-9ee6-3c1b8a82126a" name="Default Changelist" comment="" />
       <created>1586167755499</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

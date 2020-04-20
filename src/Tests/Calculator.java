@@ -1,6 +1,8 @@
 package Tests;
 
 import hw2.*;
+
+
 public class Calculator {
 
     private static void printTitle(String s) {
@@ -105,5 +107,8 @@ public class Calculator {
         printDerivate(Q3, Q3.derivative());
         printDerivate(Q4, Q4.derivative());
         printDerivate(Q5, Q5.derivative());
+
+
+
     }
 }
