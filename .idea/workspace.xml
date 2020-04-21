@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="hw2:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/hw2_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/IsMatchScalarVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Monomial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Polynomial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RationalScalar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/RealScalar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Scalar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/ScalarVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw2/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hw2/RationalScalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/RationalScalar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Tests/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/Tests/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,13 +25,16 @@
   <component name="ProjectId" id="1aA9umczljoLY1TnmLMmAUeOhYK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -82,7 +81,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="45a52f42-19ce-42b2-8fc9-a85ce1f0f206" name="Default Changelist" comment="" />
+      <changelist id="42cae46d-5797-4421-b377-420a7c4c6905" name="Default Changelist" comment="" />
       <created>1586167755499</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -98,24 +97,30 @@
       <workItem from="1586617215287" duration="1504000" />
       <workItem from="1586779366417" duration="435000" />
       <workItem from="1586792752446" duration="266000" />
+      <workItem from="1586871986160" duration="535000" />
+      <workItem from="1587043833140" duration="682000" />
+      <workItem from="1587126519184" duration="66000" />
+      <workItem from="1587229783289" duration="271000" />
+      <workItem from="1587230156807" duration="49000" />
+      <workItem from="1587230238210" duration="698000" />
+      <workItem from="1587463854400" duration="154000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="402" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1586617736387">
@@ -134,22 +139,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="309" y="29" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1586540959060" />
-    <state width="1225" height="3" key="GridCell.Tab.0.bottom" timestamp="1586868183456">
+    <state width="1225" height="49" key="GridCell.Tab.0.bottom" timestamp="1587230205094">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="3" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586868183456" />
-    <state width="1225" height="3" key="GridCell.Tab.0.center" timestamp="1586868183456">
+    <state width="1225" height="49" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587230205094" />
+    <state width="1225" height="49" key="GridCell.Tab.0.center" timestamp="1587230205094">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="3" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586868183456" />
-    <state width="1225" height="3" key="GridCell.Tab.0.left" timestamp="1586868183455">
+    <state width="1225" height="49" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587230205094" />
+    <state width="1225" height="49" key="GridCell.Tab.0.left" timestamp="1587230205094">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="3" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586868183455" />
-    <state width="1225" height="3" key="GridCell.Tab.0.right" timestamp="1586868183456">
+    <state width="1225" height="49" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587230205094" />
+    <state width="1225" height="49" key="GridCell.Tab.0.right" timestamp="1587230205094">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="3" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586868183456" />
+    <state width="1225" height="49" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587230205094" />
     <state width="1225" height="119" key="GridCell.Tab.1.bottom" timestamp="1586529861741">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -166,5 +171,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1225" height="291" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586529647373" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1587230309062">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587230309062" />
   </component>
 </project>
