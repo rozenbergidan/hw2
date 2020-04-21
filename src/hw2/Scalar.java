@@ -4,18 +4,19 @@ import Visitor.ScalarVisitor;
 
 public interface Scalar {
 
-    public boolean isMatch(Scalar v);
+    boolean isMatch(Scalar v);
 
-    public Scalar add(Scalar s);
+    Scalar add(Scalar s);
 
-    public Scalar mul(Scalar s);
+    Scalar mul(Scalar s);
 
-    public Scalar mul(int i);
+    Scalar mul(int i);
 
-    public Scalar power(int exp);
+    Scalar power(int exp);
 
-    public int sign();
+    int sign();
 
-    public void accept(ScalarVisitor v, RealScalar s);
-    public void accept(ScalarVisitor v, RationalScalar s);
+    //Functions to send "this" and the visitor to other, in order to avoid "instance of" and casting
+    void accept(ScalarVisitor v, RealScalar s);
+    void accept(ScalarVisitor v, RationalScalar s);
 }

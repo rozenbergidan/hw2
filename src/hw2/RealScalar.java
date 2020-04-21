@@ -11,6 +11,7 @@ public class RealScalar implements Scalar {
         v = x;
     }
 
+    // Verify that Scalar s is the same instance type as this
     public boolean isMatch(Scalar s){
         if(s == null) return false;
         IsMatchScalarVisitor sv = new IsMatchScalarVisitor();
@@ -18,6 +19,7 @@ public class RealScalar implements Scalar {
         return sv.isMatch();
     }
 
+    // Adding 2 scalars, returns null for scalar from different type
     public Scalar add(Scalar s) {
         if (!isMatch(s)) return null;
         AddScalarVisitor sv = new AddScalarVisitor();
@@ -25,15 +27,16 @@ public class RealScalar implements Scalar {
         return sv.add();
     }
 
+    // Multiply 2 scalars, returns null for scalar from different type
     public Scalar mul(Scalar s) {
         if (!isMatch(s)) return null;
         MulScalarVisitor sv = new MulScalarVisitor();
         s.accept(sv,this);
         return sv.mul();
     }
-    public double getValue() {
-        return v;
-    }
+
+
+    // Multiply 2 scalars, returns null for scalar from different type
     public Scalar mul(int i) {
         return new RealScalar(v * i);
     }
@@ -45,17 +48,20 @@ public class RealScalar implements Scalar {
         return new RealScalar(x);
     }
 
+    // return the sing of the scalar
     public int sign() {
         if (v > 0) return 1;
         else if (v < 0) return -1;
         else return 0; // should not happend
     }
 
+    // accept method use to send this and s to the visitor
     @Override
     public void accept(ScalarVisitor v, RationalScalar s) {
         v.visitRealScalar(this, s);
     }
 
+    // accept method use to send this and s to the visitor
     public void accept(ScalarVisitor v, RealScalar s) {
         v.visitRealScalar(this,s);
     }
@@ -64,5 +70,9 @@ public class RealScalar implements Scalar {
         DecimalFormat df3 = new DecimalFormat("#.###");
         String str = df3.format(v);
         return str;
+    }
+
+    public double getValue() {
+        return v;
     }
 }
